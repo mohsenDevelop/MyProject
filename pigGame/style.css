@@ -1,0 +1,113 @@
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    .start {
+        margin: 0 auto;
+        text-align: center;
+
+    }
+    #getScore {
+        width: 200px;
+        margin: 5px auto;
+        
+    }
+
+    .container {
+        width: 600px;
+        margin: 20px auto;
+        border:2px dashed red;
+        padding: 30px;
+    }
+    .main-scores {
+        width: 100%; 
+    }
+    .main-scores .first-user {
+        float: left;
+        background-color: burlywood;
+        width:45%;
+        text-align: center;
+        border-radius: 20px;
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    .main-scores .second-user {
+        float: right;
+        background-color: rgb(226, 226, 13);
+        width: 45%;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .clear-both {
+        clear: both;
+    }
+    .roll-dice {
+        
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+
+    }
+    .roll-dice .btn-roll {
+        
+        padding: 15px;
+        background-color: cornflowerblue;
+        border-radius: 10px;
+        font-size: 20px;
+        float: left;
+        margin-left: 80px;
+    }
+
+    .roll-dice .btn-hold {
+        float: right;
+        margin-right: 80px;
+        padding: 15px;
+        background-color: brown;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .dice-number {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .dice-number p {
+        width: 195px;
+        margin-left: 120px;
+        padding: 19px;
+        font-size: 20px;
+        background-color: crimson;
+        border-radius: 20px;
+        color: white;
+    }
+    .result {
+        
+        width: 55%;
+        text-align: center;
+        padding: 10px;
+        background-color: teal;
+        color: white;
+        margin-top: 50px;
+        border-radius: 10px;
+        margin-left: 110px;
+        font-size: 20px;
+        display: none;
+
+    }
+    .btn-reset {
+        text-align: center;
+        margin-top: 20px;
+        display: none;
+
+    }
+    .btn-reset button {
+        padding: 10px;
+        font-size: 20px;
+        width: 100px;
+        background-color: rgb(209, 27, 133);
+        border-radius: 20px;
+        color: white;
+        
+    }
+
