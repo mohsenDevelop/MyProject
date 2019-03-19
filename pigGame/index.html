@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="w3-pale-blue"> 
+
+    
+    <div class="container w3-card-4 w3-amber">
+        <div class="start">
+            <input type="text" class="w3-input w3-round w3-small" id="getScore" placeholder="Enter Max of Score..." >
+            <button class="w3-btn w3-pale-red w3-round w3-margin-bottom" id="btnStart">Start</button>
+        </div>
+        
+
+        <div class="main-scores">
+           <!-- <span > <i class="fa fa-circle"></i> </span> -->
+            <div class="first-user w3-card-2">
+                <p>First user</p>
+                <p >Score : <span id="first-user-score">0</span></p>
+                <p>Current Score : <span id="first-user-score-current">0</span></p>
+            </div>
+           
+            <div class="second-user w3-card-2">
+                <p>Second user</p>
+                <p >Score : <span id="second-user-score">0</span></p>
+                <p>Current Score : <span id="second-user-score-current">0</span></p>
+            </div>
+        </div>
+        <div class="clear-both"></div>
+        <div class="roll-dice">
+            <button type="button" id="btn-roll-dice" class="btn-roll w3-btn">Roll Dice!</button>
+            <button class="btn-hold w3-btn" id="btn-hold-on">Hold On!</button>
+        </div>
+        <div class="clear-both"></div>
+        <div class="dice-number">
+            <i id="dice-result1" class=""></i>
+            <i id="dice-result2" class=""></i>
+            
+        </div>
+
+        <div class="result w3-card-2" id="winner">
+            <p id="result-show">First User Wooonnnnn!!</p>
+        </div>
+
+        <div class="btn-reset" id="resetBtn">
+            <button class="w3-btn">Reset</button>
+        </div>
+    </div>
+
+
+    <script src="pigGame.js"></script>
+</body>
+</html>
