@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <title>liquidation</title>
+</head>
+<body>
+
+    <div class="container w3-card-2">
+        <div class="w3-center w3-teal w3-container" >
+           <h1>Liquidation</h1>
+        </div>
+
+        <div class="w3-container w3-sand">
+            <div class="calcualtor w3-card w3-panel w3-blue-gray w3-padding-16 " >
+               <span style="width: 35%;">Net Money :</span>
+               <span id="net" class=" w3-white w3-padding  w3-center w3-round" style="width: 45%;">0</span>
+            </div>
+
+            
+            <div class="calcualtor w3-card w3-panel w3-blue-gray w3-padding-16 " >
+                <span style="width:35%;">Income :</span>
+                <span id="income" class=" w3-white w3-padding  w3-center w3-round" style="width: 45%;">0</span>
+             </div>
+ 
+             <div class="calcualtor w3-card w3-panel w3-blue-gray w3-padding-16 " >
+                <span style="width: 35%;">Expenses :</span>
+                <span id="expenses" class=" w3-white w3-padding  w3-center w3-round" style="width: 45%;">0</span>
+             </div>
+ 
+        </div>
+
+        <div class="w3-container" style="background-color: #EEEEEE; ">
+
+            <div class="w3-row-padding w3-margin-top w3-margin-bottom">
+                <div class="w3-quarter	">
+                        <select id="mySelect" class="w3-select w3-border w3-center w3-round " name="option" style="width:100%" >
+                                <option value="" disabled selected>+</option>
+                                <option class="w3-large" value="1">+</option>
+                                <option class="w3-large" value="2">-</option>
+                                
+                         </select>
+                </div>
+
+                <div class="w3-quarter 	">
+                        <input id="showDrop" type="text" class="w3-input w3-border w3-round w3-center" placeholder="">
+                </div>
+
+                <div class="w3-quarter	">
+                        <input id="moneyValue" type="text" class="w3-input w3-border w3-round" placeholder="VALUE">
+                </div>
+
+                <div class="w3-quarter	">
+                        <button id="btnSub" class="w3-btn w3-red w3-round" style="width:100%">SUBSCRIBE</button>
+                 </div>
+                   
+            </div>
+
+
+        </div>
+
+        <div class="w3-row-padding w3-margin-top ">
+            <div class="w3- w3-half w3-center " >
+                <p  class="w3-text-green w3-large">INCOME</p>
+                <div id="resultIncome">
+                </div>
+                
+            </div>
+ 
+            <div class="w3-half w3-center">
+                <p class="w3-text-red w3-large">EXPENSES</p>
+                <div id="resultEspenses">
+                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<script src="js/liquidation.js"></script>
+</body>
+</html>
