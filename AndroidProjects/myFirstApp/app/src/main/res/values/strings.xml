@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+
+    <string name="app_feature_last_post">لیست آخرین پست ها</string>
+    <string name="app_feature_user_profile">ورود به پروفایل</string>
+    <string name="app_feature_fashion2">فروشگاه لباس</string>
+    <string name="app_feature_music">موزیک پلیر</string>
+    <string name="app_feature_video">ویدئو پلیر</string>
+    <string name="app_feature_log_in">ورود به حساب کاربری</string>
+</resources>

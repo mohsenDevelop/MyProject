@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/navigation_header_image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/navigation_header"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/default_avatar"
+        android:layout_alignLeft="@id/navigation_header_text"
+        android:layout_alignRight="@id/navigation_header_text"
+        android:layout_above="@id/navigation_header_text"
+        android:layout_marginBottom="@dimen/standard_margin"
+        />
+    <TextView
+        android:id="@+id/navigation_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mohsen.kermanifar@yahoo.com"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_font_size"
+        android:layout_alignBottom="@+id/navigation_header_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/standard_margin"
+        />
+</RelativeLayout>

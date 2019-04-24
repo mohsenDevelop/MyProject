@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/slilder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/standard_card_radius">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_margin">
+            <ImageView
+                android:id="@+id/feature_lst"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/ic_feature_list"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:id="@+id/lbl_app_feature_lst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="لیست مطالب"
+                android:layout_toLeftOf="@+id/feature_lst"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/standard_margin"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

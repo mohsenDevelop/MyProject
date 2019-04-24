@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.PostActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/pic1"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="@dimen/standard_margin"/>
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="لورم ایپسوم متن ساختگی"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textColor="@android:color/black"
+                android:layout_marginRight="@dimen/standard_margin"/>
+
+            <TextView
+                android:id="@+id/post_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. "
+                android:layout_gravity="end"
+                android:ellipsize="end"
+                android:padding="@dimen/standard_margin"
+                />
+
+
+            <TextView
+                android:id="@+id/post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2 ساعت پیش"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/standard_margin"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

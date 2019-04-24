@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.ProfileActivity"
+    android:layoutDirection="rtl"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/Base.ThemeOverlay.AppCompat.Dark"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false"
+            app:contentScrim="@color/colorPrimary"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="parallax">
+                <ImageView
+                    android:id="@+id/background_profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/form_background"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="62dp"
+                    android:src="@drawable/default_avatar"
+                    android:layout_above="@id/btn_change_photo"
+                    android:layout_alignRight="@id/btn_change_photo"
+                    android:layout_alignLeft="@id/btn_change_photo"/>
+
+                <com.kermanifar.mohsen.myfirstapp.customview.CustomFontButton
+                    android:id="@+id/btn_change_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:text="تغییر عکس"
+                    android:textSize="@dimen/normal_font_size_dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/selector_orange_button"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_alignBottom="@id/background_profile_image"
+                    android:layout_alignRight="@id/background_profile_image"
+                    android:layout_marginRight="@dimen/standard_margin"/>
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/profile_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/background_profile_image"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/standard_margin_x2"
+            >
+
+            <com.kermanifar.mohsen.myfirstapp.customview.CustomFontTextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اطلاعات فردی"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_font_size"
+                />
+
+            <com.kermanifar.mohsen.myfirstapp.customview.CustomFontEditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_default_view_edtext"
+                android:padding="@dimen/standard_margin"
+                android:hint="نام"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/profile_margin_large"
+                android:layout_marginRight="@dimen/profile_margin_large"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:textSize="@dimen/small_font_size"
+                />
+
+            <com.kermanifar.mohsen.myfirstapp.customview.CustomFontEditText
+                android:id="@+id/edt_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_default_view_edtext"
+                android:padding="@dimen/standard_margin"
+                android:layout_marginBottom="@dimen/standard_margin"
+                android:layout_marginLeft="@dimen/profile_margin_large"
+                android:layout_marginRight="@dimen/profile_margin_large"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:hint="نام خانوادگی"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textSize="@dimen/small_font_size" />
+
+            <com.kermanifar.mohsen.myfirstapp.customview.CustomFontTextView
+                android:id="@+id/txt_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تخصص ها"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_font_size"
+                android:layout_marginBottom="@dimen/standard_margin"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.kermanifar.mohsen.myfirstapp.customview.CustomFontCheckBox
+                    android:id="@+id/chk_java"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:checked="true"
+                    android:text="Java" />
+
+                <com.kermanifar.mohsen.myfirstapp.customview.CustomFontCheckBox
+                    android:id="@+id/chk_css"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:text="Css"/>
+
+                <com.kermanifar.mohsen.myfirstapp.customview.CustomFontCheckBox
+                    android:id="@+id/chk_html"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:text="Html"/>
+
+            </LinearLayout>
+
+            <com.kermanifar.mohsen.myfirstapp.customview.CustomFontTextView
+                android:id="@+id/txt_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جنسیت"
+                android:layout_gravity="right"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium_font_size"
+                android:layout_marginBottom="@dimen/standard_margin"
+                />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/standard_margin"
+                >
+
+                <com.kermanifar.mohsen.myfirstapp.customview.CustomFontRadioButton
+                    android:id="@+id/rdo_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin_x2"
+                    android:text="زن"/>
+
+                <com.kermanifar.mohsen.myfirstapp.customview.CustomFontRadioButton
+                    android:id="@+id/rdo_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="مرد"/>
+
+            </RadioGroup>
+
+
+            <com.kermanifar.mohsen.myfirstapp.customview.CustomFontButton
+                android:id="@+id/btn_save_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/profile_margin_large"
+                android:layout_marginLeft="@dimen/profile_margin_large"
+                android:text="ثبت اطلاعات"
+                android:background="@drawable/selector_blue_button"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_font_size"
+                />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

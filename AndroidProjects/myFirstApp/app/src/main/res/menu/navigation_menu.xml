@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item android:id="@+id/navigation_menu_main_activity" android:title="صفحه اصلی"/>
+
+        <item android:id="@+id/navigation_menu_profile" android:title="پروفایل"/>
+
+        <item android:id="@+id/navigation_menu_login" android:title="حساب کاربری"/>
+    </group>
+
+    <group android:id="@+id/group2">
+        <item android:id="@+id/navigation_menu_post" android:title="لیست پست ها"/>
+        <item android:id="@+id/navigation_menu_animation" android:title="لیست انیمیشن ها"/>
+    </group>
+    <group android:id="@+id/group3">
+        <item android:id="@+id/navigation_menu_exit" android:title="خروج"/>
+    </group>
+   </menu>
